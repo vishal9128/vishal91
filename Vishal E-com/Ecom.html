@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-com</title>
+    <style type="text/css">     
+    .header{
+        width: 80px;
+        height: 80px;
+    }
+
+        nav{
+            width:100%;
+            height: 70%;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 1px solid red;
+            box-shadow: 2px 0px greenyellow;
+            display: flex;
+            align-items: center;
+            background-color: red;
+
+
+
+        }
+        
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+            color:black;
+        }
+        .menu a{
+            font-size: 20px;
+            text-decoration: none;
+            color:rgb(14, 4, 4);
+            padding: 5px px;
+            margin: 5px;
+            font-weight: bold;
+            transform: scale(1.1);
+            transition: 00.4s linear;
+        }
+        body{
+            background-color:none;
+        }
+        .menu a:last-child{
+            background-color: blue;
+            color: white;
+        }
+        img{
+            width: 220px;
+            height: 220px;
+            margin-right: 20px;
+        }
+        .hen{
+            font-weight: bold;
+            color: none;
+            background-color:red;
+            border: radius 100px;;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            perspective: 2000px;
+        }
+        .container> div img:hover{
+            transform: scale(1.2);
+            transition: 0.4s linear;
+
+        }
+        .container1> div img:hover{
+            transform: scale(1.2);
+            transition: 0.4s linear;
+        }
+        .container2> div img:hover{
+            transform: scale(1.2);
+            transition: 0.4s linear;
+        }
+        .container3> div img:hover{
+            transform: scale(1.2);
+            transition: 0.4s linear;
+        }
+        .container4> div img:hover{
+            transform: scale(1.2);
+            transition: 0.4s linear;
+        }
+        .container5> div img:hover{
+            transform: scale(1.2);
+            transition: 0.4s linear;
+        }
+        .container6> div img:hover{
+            transform: scale(1.2);
+            transition: 0.4s linear;
+        }
+        .left p:nth-last-child(4){
+            font-size: ;
+            font-weight:;
+        }
+        .left p:nth-last-child(3){
+            font-size: ;
+            font-weight:;
+        }
+        .left p:nth-last-child(2){
+            font-size: x-large;
+            font-weight: bold;
+        }
+        button{
+            font-size: large;
+            background-color: black;
+            border-style: none;
+            text-align: center;
+            color: white;
+            
+        }
+        button:hover{
+            transform: scale(1.2);
+            transition: 1s linear;
+        }
+        .middle p:nth-last-child(4){
+            font-size: ;
+            font-weight: ;
+        }
+        .middle p:nth-last-child(3){
+            font-size: xx-large;
+            font-weight: 500;
+        }
+        .middle p:nth-last-child(2){
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .right p:nth-last-child(4){
+            font-size: ;
+            font-weight: ;
+        }
+        .right p:nth-last-child(3){
+            font-size: xx-large;
+            font-weight: 500;
+        }
+        .right p:nth-last-child(2){
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .container1{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            perspective: 2000px;
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            perspective: 2000px;
+        }
+        .cs{
+            background-color: blueviolet;
+            font-size: x-large;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 0px;
+        
+        }
+        .nav.search-form input{
+            height: 100%;
+            width: 100%;
+            background: none;
+            text-transform: none;
+            font-size: 1.5rem;
+            color: var(--black--);
+            padding: 0 150rem;
+            padding-top: 50rem;
+
+        }
+        .container3{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            perspective: 2000px;
+            font-weight: ;
+            font-size: ;
+        }
+        .container4{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            perspective: 2000px;
+        }
+        .container5{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            perspective: 2000px;
+        }
+        .poster1{
+            width: 700px;
+        }
+        .poster1:hover{
+            transform: scale(1.1);
+            transition: 0.4s linear;
+        }
+        menu:hover{
+            transform: scale(1.1);
+            transition: 0.4s linear;
+        } 
+        .body{
+            background-image: url("forest.jpg");
+            /*height: 80%;
+            width: 70%;*/
+            background-size: cover;
+            background-blend-mode:difference;
+        }
+        .footer{
+            display: center;
+            background-color: black;
+            color: white;
+            align-items: flex;
+        }
+        .col-1 a{
+            text-decoration: none;
+            color: whitec;
+        }
+        body{
+            background-image: linear-gradient(45deg, hsl(98, 100%, 50%), rgb(111, 0, 255));
+        }
+        .hr{
+            height: 200px;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <center>
+    <header>
+        <hr>
+        <nav>
+            <div class="logo">G-store</div>  
+            <div class="vk">
+            <form action="class="search-form">
+                <input type="search" id="search-box" placeholder="search here....">
+            </form></div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Features</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Login</a>
+            </div>
+            
+        </nav>
+        
+        <p>
+        <div class="hen">
+            <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjhnZzd2ub6AhVBD3IKHZq3DEQYABAAGgJzZg&ohost=www.google.com&cid=CAASJeRoPehciQx99vRKucRqmhQY3cO9q2-wP2Cnd9_WpawkSJJ4iJc&sig=AOD64_08Ojn5Ou4FIo6oyn1G6PGdlVOcsw&q&adurl&ved=2ahUKEwip1pTd2ub6AhW1XmwGHUqhAqcQ0Qx6BAgJEAE">amazonIndia</a>
+        direct go to amazonIndia</div></p>
+        <div class="poster">
+        <a href="poster"><img class="poster1" src="poster.jpg"></a>
+        </div>
+        <p>
+        <div class="cs"><a>Cloths collections</a></div>
+        </p>
+        <div class="container">
+             <div class="left">
+                <img src="cloth1.jpg"><br>
+             <p>&#x20b9;4000 Off</p>
+              &#x20b9;999 <del>&#x20b9; 4999</del>
+             <p><button>Add to card</button></p>
+            <P><button>Shop now</button></P>
+            </div>
+            <div class="middle">
+                <img src="cloth2.jpg">
+                <p>&#x20b9;3500 Off</p>
+                &#x20b9;999 <del>&#x20b9; 4599</del>
+                
+                <p><button>Add to card</button></p>
+                <p><button>Shop now</button></p>
+            </div>
+            <div class="right">
+                <img src="cloth3.jpg">
+                <p>&#x20b9;2500 Off</p>
+                &#x20b9;1099 <del>&#x20b9; 3599</del>
+                <p><button>Add to card</button></p>
+                <p><button>Shop now</button></p>
+            </div>
+            </div>
+            <div class="cs"><a></a></div>
+            <div class="container1">
+                <div class="left">
+                    <img src="cloth4.jpg">
+                    <p>&#x20b9;400 Off</p>
+                    &#x20b9;99 <del>&#x20b9; 499</del>
+                    <p><button>Add to card</button></p>
+                    <p><button>Shop now</button></p>
+                </div>
+                <div class="middle">
+                    <img src="cloth5.jpg">
+                    <p>&#x20b9;4000 Off</p>
+                    &#x20b9;1999 <del>&#x20b9; 5999</del>
+                    <p><button>Add to card</button></p>
+                    <p><button>Shop now</button></p>
+                </div>
+                <div class="right">
+                    <img src="cloth6.jpg">
+                    <p>&#x20b9;3000 Off</p>
+                    &#x20b9;999 <del>&#x20b9; 3999</del>
+                    <p><button>Add to card</button></p>
+                    <p><button>Shop now</button></p>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="left">
+                   <img src="cloth7.jpg"><br>
+                   <p>&#x20b9;4000 Off</p>
+                   &#x20b9;999 <del>&#x20b9; 4999</del>
+                 <p><button>Add to card</button></p>
+                 <p><button>Shop now</button></p>
+               </div>
+               <div class="middle">
+                   <img src="cloth8.jpg">
+                   <p>&#x20b9;20000 Off</p>
+                   &#x20b9;9999 <del>&#x20b9; 29999</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               <div class="right">
+                   <img src="cloth9.jpg">
+                   <p>&#x20b9;5000 Off</p>
+                   &#x20b9;999 <del>&#x20b9; 5999</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+            </div>
+               <div class="cs">
+                <a>Grocery items</a>
+            </div>
+            <p>
+            <div class="poster">
+                    <a href="poster"><img class="poster1" src="groposter.jpg"></a>
+                    </div>
+                    </p>
+            <div class="container3">
+                <div class="left">
+                    <img src="gro1.jpg">
+                    <p>&#x20b9;30 Off</p>
+                    &#x20b9;90 <del>&#x20b9; 120</del>
+                    <p><button>Add to card</button></p>
+                    <p><button>Shop now</button></p>
+                </div>
+ 
+               <div class="middle">
+                   <img src="gro2.jpg">
+                   <p>&#x20b9;30 Off</p>
+                   &#x20b9;90 <del>&#x20b9; 120</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               <div class="right">
+                   <img src="gro3.jpg">
+                   <p>&#x20b9;20 Off</p>
+                   &#x20b9;93 <del>&#x20b9; 113</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               </div>
+               <div class="container4">
+                <div class="left">
+                   <img src="gro4.jpg"><br>
+                   <p>&#x20b9;50 Off</p>
+                   &#x20b9;70 <del>&#x20b9; 120</del>
+                 <p><button>Add to card</button></p>
+                 <p><button>Shop now</button></p>
+               </div>
+               <div class="middle">
+                   <img src="gro5.jpg">
+                   <p>&#x20b9;41 Off</p>
+                   &#x20b9;99 <del>&#x20b9; 140</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               <div class="right">
+                   <img src="gro6.jpg">
+                   <p>&#x20b9;40 Off</p>
+                   &#x20b9;99 <del>&#x20b9; 139</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               </div>
+               <div class="cs">
+                <a>Shoes collections</a>
+            </div>
+            <p>
+            <div class="poster">
+                <a href="poster"><img class="poster1" src="shoposter.jpg"></a>
+                </div>
+                </p>
+            <div class="container4">
+                <div class="left">
+                   <img src="sho1.jpg"><br>
+                   <p>&#x20b9;500 Off</p>
+                   &#x20b9;700 <del>&#x20b9; 1200</del>
+                 <p><button>Add to card</button></p>
+                 <p><button>Shop now</button></p>
+               </div>
+               <div class="middle">
+                   <img src="sho2.jpg">
+                   <p>&#x20b9;410 Off</p>
+                   &#x20b9;990 <del>&#x20b9; 1400</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               <div class="right">
+                   <img src="sho3.jpg">
+                   <p>&#x20b9;400 Off</p>
+                   &#x20b9;990 <del>&#x20b9; 1390</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               </div>
+               <div class="container4">
+                <div class="left">
+                   <img src="sho4.jpg"><br>
+                   <p>&#x20b9;500 Off</p>
+                   &#x20b9;700 <del>&#x20b9; 1200</del>
+                 <p><button>Add to card</button></p>
+                 <p><button>Shop now</button></p>
+               </div>
+               <div class="middle">
+                   <img src="sho6.jpg">
+                   <p>&#x20b9;410 Off</p>
+                   &#x20b9;990 <del>&#x20b9; 1400</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               <div class="right">
+                   <img src="sho2.jpg">
+                   <p>&#x20b9;400 Off</p>
+                   &#x20b9;999 <del>&#x20b9; 1399</del>
+                   <p><button>Add to card</button></p>
+                   <p><button>Shop now</button></p>
+               </div>
+               </div>
+    </header>
+    <center>
+    <div class="footer">
+        <div class="col-1">
+            <h3>USEFULL LINK</h3>
+            <a href="#">About</a><br>
+            <a href="#">Services</a><br>
+            <a href="#">Contact</a><br>
+            <a href="#">Shop</a><br>
+            <a href="#">Blog</a><br>
+        </div>
+        <div class="col-2"><hr>
+        <center><h3>TITLE</h3></center>
+        <form>
+            <p><input type="text" placeholder="Your email address"></p>
+            <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+        </div><hr>
+        <div class="col-3">
+        <H3>CONTACT</H3>
+        <P>Gurugram<br>DELHI(NCR)</P>
+        </div>
+    </div>
+    </center>
+    </center>
+</body>
+</html>
